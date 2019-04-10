@@ -4,7 +4,18 @@ import entities.Funcao;
 
 public class Bissecao {
 	
-	public void Calc(Double a, Double b) {
+	public void Calc(Double a, Double b, int t) {
+		
+		
+		if(t >= 3) {
+			return;
+		}
+		
+		 if(verificaRaiz(a, b)) {
+			 System.out.println("Intervalo a: "+ a + " b: "+ b + "  não possui raiz");
+//			 return;
+		 }
+		
 		
 		System.out.println("\n===============================");
 		System.out.println("Calculo de raizes por bisseção!");
@@ -15,22 +26,18 @@ public class Bissecao {
 
 		int k = 0;
 
-		double MAXA = -1000000, MAXB = 1000000;
+		double MAXA = 0, MAXB = 1000000;
 		double aa = a, x = 0, bb = b, xa = a;
 	
 		
 		while(stop){
 			k++;
 			x = (a + b) / 2;
-			//System.out.println("k: " + k);
-			//System.out.println(" a: "+ a + "    x: "+ x +  "     b: "+ b + "\n");
-			//System.out.println( " f(a): "+ f.FuncaoRaiz(a) +" f(x): "+ f.FuncaoRaiz(x) + " f(b): "+ f.FuncaoRaiz(b) + "\n");
+	//		System.out.println("k: " + k);
+	//		System.out.println(" a: "+ a + "    x: "+ x +  "     b: "+ b + "\n");
+	//		System.out.println( " f(a): "+ f.FuncaoRaiz(a) +" f(x): "+ f.FuncaoRaiz(x) + " f(b): "+ f.FuncaoRaiz(b) + "\n");
 			
-		//	 if(verificaRaiz(a, b)) {
-	//			 System.out.println("Intervalo a: "+ a + " b: "+ b + "  não possui raiz");
-	//			 stop = false;
-	//			 continue;
-	//		 }
+			
 			 
 			
 			if(k > 10000) {
@@ -41,14 +48,8 @@ public class Bissecao {
 			
 			//System.out.println( Math.abs(f.FuncaoRaiz(a) - f.FuncaoRaiz(b)));
 			
-			if( Math.abs(f.FuncaoRaiz(x) - f.FuncaoRaiz(b)) < f.erro ){
+			if( Math.abs(f.FuncaoRaiz(x) - f.FuncaoRaiz(xa)) < f.erro ){
 				
-	//			if(verificaRaiz(MAXA, x)) {
-	//			Calc(MAXA, x);
-	//			}
-	//			if(verificaRaiz(x, MAXB)) {
-	//				Calc(x, MAXB);
-//				}
 				
 				System.out.println("======(Bisseção)======");
 				System.out.println("Convergiu!!");

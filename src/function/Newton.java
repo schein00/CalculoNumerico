@@ -4,14 +4,17 @@ import entities.Funcao;
 
 public class Newton {
 	
-	public void Calc() {
+	public void Calc(double x, int t) {
 		
+		if(t >= 3) {
+			return;
+		}
 		System.out.println("\n=============================");
 		System.out.println("Calculo de raizes por Newton!");
 		
 		int k = 0;
-		double x = 2; 
-		double nx = 2; //chute inicial depois de primeira interação é usado para calcular proximo x
+		
+		double nx = x; //chute inicial depois de primeira interação é usado para calcular proximo x
 		boolean stop = true; 
 		Funcao f = new Funcao();
 		

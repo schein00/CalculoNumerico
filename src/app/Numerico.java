@@ -28,8 +28,8 @@ public class Numerico {
 			Bissecao b = new Bissecao();
 			Newton n = new Newton();
 			
-			b.Calc(0.0 , 2.0);
-			n.Calc();
+			b.Calc(-10.0 , 10.0, 0);
+			n.Calc(1.0, 0);
 			
 		}else{
 			GaussJacobi j = new GaussJacobi();
