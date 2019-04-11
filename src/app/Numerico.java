@@ -36,9 +36,26 @@ public class Numerico {
 			GaussSeidel g = new GaussSeidel();
 			Sassenfeld s = new Sassenfeld();
 			
-			j.Calc();
-			g.Calc();
-			s.Calc();
+		//	j.Calc();
+		//	g.Calc();
+			
+			double ma [][] = {{ 4, 1,-1, 0, 0, 0, 0, 0},
+					 { 1, 6,-2, 1,-1, 0, 0, 0},
+					 { 0, 1, 5, 0,-1, 0, 0, 0},
+					 { 0, 2, 0, 5,-1, 1,-1,-1},
+					 { 0, 0,-1,-1, 6, 0, 0,-1},
+					 { 0, 0,-1, 0,-1,-1, 0, 0},
+					 { 0, 0, 0,-1, 0, 5, 4,-1},
+					 { 0, 0, 0,-1,-1, 0,-1, 5}};
+			int l = 8, c = 8;
+			
+			
+			boolean ss =  s.Calc(ma, l,c);
+			if(ss) {
+				System.out.println("converge");
+			}else {
+				System.out.println("Não converge2");
+			}
 				
 		}
 		

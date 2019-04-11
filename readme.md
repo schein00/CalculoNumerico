@@ -1,3 +1,8 @@
+Avaliação de Calculo numerico
+
+Nome: Jeferson Auguso Schein 
+Matricula: 1311100028
+
 questão 1
 	1311100028 mod 5 = 3 + 7 = 10//
 	
@@ -9,7 +14,6 @@ Questão 2
 		->Passo Inicial: 1
 
 Questão 3
-
 Bisseção
 
 	-> intervalo inicial [-100, 100]
@@ -46,6 +50,32 @@ Questão 4
 			
 			
 
+Questão 5:
+		Todas as matrizes foram computadas pelo algoritmo de Sassenfeld, dizendo se converge ou não utilizando Gauss-Seidel
+		
+		O Algoritmo nada mais faz, do que descobrir se a diagonal principal é dominante ou não, se ela for dominante a matriz aplicada a Gauss-Seidel converge
+		
+		a) Converge
+		b) Converge
+		c) nao converge
+
+Questão 6:
+		Aplicando as matrizes tanto no algoritmo de Gauss-Seidel e Gauss-Jacobi
+		
+		Ax = b
+			Jacobi não convergiu
+			Seidel -> 
+				x1 = 1,25 
+				x2 = -0,75
+				x3 = -2,75
+				Num Interações: 8
+				
+		Dx = b
+			jacobi nao convergiu
+			como testado na questão anterior seidel nao converge para esse sistema linear
+		
+
+Questão 7:
 			
 		
 		
